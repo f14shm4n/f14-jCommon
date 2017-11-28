@@ -16,5 +16,5 @@ public interface Predicate<T> {
      * @param o Some object to check.
      * @return Result logical value.
      */
-    boolean apply(T o);
+    boolean test(T o);
 }

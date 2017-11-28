@@ -1,4 +1,4 @@
-package f14.common.collections;
+package f14.common;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,13 +25,13 @@ public final class CollectionsUtil {
 
     public static <T> void forEach(Collection<T> collection, Action1<T> action) {
         for (T o : collection) {
-            action.Invoke(o);
+            action.run(o);
         }
     }
 
     public static <T> T firstOrNull(Collection<T> collection, Predicate<T> predicate) {
         for (T o : collection) {
-            if (predicate.apply(o)) {
+            if (predicate.test(o)) {
                 return o;
             }
         }
@@ -41,7 +41,7 @@ public final class CollectionsUtil {
     public static <T> List<T> where(Collection<T> collection, Predicate<T> predicate) {
         List<T> result = new ArrayList<>();
         for (T o : collection) {
-            if (predicate.apply(o)) {
+            if (predicate.test(o)) {
                 result.add(o);
             }
         }
@@ -50,7 +50,7 @@ public final class CollectionsUtil {
 
     public static <T> boolean any(Collection<T> collection, Predicate<T> predicate) {
         for (T o : collection) {
-            if (predicate.apply(o)) {
+            if (predicate.test(o)) {
                 return true;
             }
         }

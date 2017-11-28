@@ -1,3 +1,4 @@
+import f14.common.CollectionsUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -5,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import f14.common.collections.CollectionsUtil;
 import f14.common.functions.Action;
 
 /**

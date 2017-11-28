@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/f14Common.iml" filepath="$PROJECT_DIR$/.idea/f14Common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/src.iml" filepath="$PROJECT_DIR$/.idea/modules/src/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/f14Common.iml" filepath="$PROJECT_DIR$/.idea/modules/f14Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/f14Common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/f14Common_main.iml" group="f14Common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/f14Common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/f14Common_test.iml" group="f14Common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/src.iml" filepath="$PROJECT_DIR$/.idea/modules/src/src.iml" group="src" />
     </modules>
   </component>
 </project>

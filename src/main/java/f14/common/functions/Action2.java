@@ -5,5 +5,5 @@ package f14.common.functions;
  */
 
 public interface Action2<T1, T2> {
-    void Invoke(T1 o1, T2 o2);
+    void run(T1 o1, T2 o2);
 }
